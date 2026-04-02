@@ -1,0 +1,17 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "agent-pay",
+  "name_for_model": "agent_pay",
+  "description_for_human": "Payment protocol for AI agents. Send and receive USDC/ETH on Base L2.",
+  "description_for_model": "Use this plugin when an AI agent needs to send or receive crypto payments. Supports USDC and ETH on Base L2. Fees are less than $0.001. Supports direct payments, escrow, and agent registration.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://api.agent-pay.xyz/openapi.json"
+  },
+  "logo_url": "https://agent-pay.xyz/logo.png",
+  "contact_email": "hello@agent-pay.xyz",
+  "legal_info_url": "https://agent-pay.xyz/legal"
+}

@@ -1,0 +1,36 @@
+{
+  "name": "agent-pay-mcp",
+  "version": "0.1.0",
+  "description": "MCP server that enables AI agents to send and receive crypto payments (USDC/ETH on Base L2)",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+    "agent-pay-mcp": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "ai-agent",
+    "payments",
+    "crypto",
+    "usdc",
+    "base",
+    "ethereum",
+    "langchain",
+    "crewai",
+    "claude",
+    "agent-pay"
+  ],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "ethers": "^6.13.0"
+  },
+  "license": "MIT",
+  "author": "agent-pay",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agent-pay/agent-pay"
+  }
+}

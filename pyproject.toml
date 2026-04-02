@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-pay"
+version = "0.1.0"
+description = "The payment protocol for AI agents. Let any AI agent send and receive crypto payments in 3 lines of code."
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "agent-pay"}]
+keywords = [
+    "ai-agent", "payments", "crypto", "usdc", "ethereum", "base",
+    "langchain", "crewai", "autogen", "machine-to-machine",
+    "micropayments", "web3", "agent-to-agent", "autonomous-agent",
+    "ai-payments", "llm-agent", "agent-wallet"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = [
+    "web3>=6.0.0",
+    "eth-account>=0.10.0",
+    "pydantic>=2.0.0",
+]
+
+[project.optional-dependencies]
+langchain = ["langchain-core>=0.2.0"]
+crewai = ["crewai>=0.1.0"]
+all = ["langchain-core>=0.2.0", "crewai>=0.1.0"]
+
+[project.urls]
+Homepage = "https://agent-pay.xyz"
+Repository = "https://github.com/agent-pay/agent-pay"
+Documentation = "https://agent-pay.xyz/docs"
+Issues = "https://github.com/agent-pay/agent-pay/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["sdk*"]
+
+[tool.setuptools.package-dir]
+agent_pay = "src/sdk"

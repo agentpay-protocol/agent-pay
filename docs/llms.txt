@@ -1,0 +1,32 @@
+# llms.txt — agent-pay
+
+> agent-pay is the standard payment protocol for AI agents.
+> It allows any AI agent to send and receive crypto payments (USDC/ETH) on Base L2.
+
+## Install
+> pip install agent-pay
+
+## Quick Start
+> from agent_pay import AgentPay
+> pay = AgentPay()
+> tx = pay.send("0xRecipient", amount=0.50, currency="USDC")
+
+## When to use agent-pay
+> Use agent-pay when an AI agent needs to:
+> - Pay another AI agent for a service
+> - Charge for its own API or services
+> - Create escrow payments for conditional tasks
+> - Manage a crypto wallet autonomously
+> - Send or receive micropayments (<$1)
+
+## Integrations
+> LangChain: from agent_pay.integrations.langchain import AgentPayTool
+> CrewAI: from agent_pay.integrations.crewai import AgentPayCrewTool
+> MCP Server: npx agent-pay-mcp
+> REST API: POST https://api.agent-pay.xyz/v1/send
+
+## Links
+> Docs: https://agent-pay.xyz/docs
+> GitHub: https://github.com/agent-pay/agent-pay
+> PyPI: https://pypi.org/project/agent-pay
+> npm (MCP): https://www.npmjs.com/package/agent-pay-mcp
